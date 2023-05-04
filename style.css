@@ -47,6 +47,14 @@
     @apply bg-cyan-500 hover:bg-cyan-400 p-2 rounded-md text-white;
 }
 
+.button-circle {
+    @apply bg-gray-500 hover:bg-gray-400 p-2 rounded-full;
+}
+
+.button-circle-primary {
+    @apply bg-cyan-500 hover:bg-cyan-400 p-2 rounded-full text-white;
+}
+
 .button-disabled {
     @apply bg-gray-600 text-gray-400 cursor-not-allowed;
 }
@@ -104,7 +112,7 @@
 }
 
 .movie-item-content-wrapper {
-    @apply h-56 p-4 flex flex-col items-start justify-start w-full;
+    @apply h-56 p-4 flex flex-col items-start justify-start w-full relative;
 }
 
 .movie-item-title-wrapper {
@@ -153,4 +161,20 @@
 
 .flex-spacer {
     @apply w-full flex-1;
+}
+
+.movie-item-button-wrapper {
+    @apply absolute bottom-0 right-0 m-2;
+}
+
+.movie-item-button-separation {
+    @apply m-1;
+}
+
+.movie-item-button-icon {
+    @apply h-7 w-7;
+}
+
+.movies-info {
+    @apply text-white;
 }
